@@ -35,10 +35,11 @@ function Editor() {
 			<div className={styles.dscCommunity}>
 				<EditContextProvider>
 					<Settings />
-					<div className={styles.pageBtnsWrapper}>
+					<div className={styles.pageBtnsWrapper} style={{display:"flex", alignItems:"end"}}>
 						<Button
 							outline
 							color="primary"
+							style={{ height: "40px" }}
 							disabled={currentPageNo === 1}
 							onClick={() => setCurrentPageNo(prev => prev - 1)}
 						>

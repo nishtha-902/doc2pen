@@ -5,7 +5,7 @@ import { EditContext } from "../../containers/editContext";
 
 const OutputComponent = ({ pageNo, show }) => {
 	const editContext = useContext(EditContext);
-	const page = require(`./${editContext.pageSrc}`);
+	// const page = require(`./${editContext.pageSrc}`);
 
 	const [pageText, setPageText] = useState("");
 	const [wordCount, setWordCount] = useState(0);
@@ -19,22 +19,16 @@ const OutputComponent = ({ pageNo, show }) => {
 	return (
 		<>
 			<div
-				className={`${classes.wrapper} col-11 col-lg-8 mx-auto mt-4 p-2`}
+				className= "col-11 col-lg-8 mx-auto mt-4 p-2"
 				style={{ display: show || allPagesVisible ? "block" : "none" }}
 			>
 				<div
 					id="outputPage"
-					className={classes.outputBox + " outputPage col-12 mx-auto px-0"}
+					className= " outputPage col-12 mx-auto px-0"
 				>
-					<div className={`${classes.imgContainer} col-12 mx-auto px-0`}>
-						<img
-							src={page.default}
-							alt="editor"
-							className="mx-auto px-0 "
-							width="100%"
-							height="100%"
-						/>
-					</div>
+					{/* <div className={`${classes.imgContainer} col-12 mx-auto px-0`}>
+						
+					</div> */}
 					<textarea
 						type="text"
 						onKeyDown={e => {
@@ -60,6 +54,9 @@ const OutputComponent = ({ pageNo, show }) => {
 							width: `${(100 * editContext.bodyValues.bodyWidth) / 70}%`,
 							letterSpacing: `${editContext.bodyValues.bodyLetterSpace}px`,
 							overflowY: "hidden",
+							height: "200px",
+							border:"black 2px solid",
+							borderRadius:"15px",
 						}}
 					/>
 				</div>
@@ -70,6 +67,7 @@ const OutputComponent = ({ pageNo, show }) => {
 						fontWeight: "bold",
 						display: "flex",
 						justifyContent: "space-between",
+						border:"none"
 					}}
 				>
 					<div>

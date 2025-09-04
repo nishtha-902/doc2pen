@@ -1,7 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import styles from "./banner.module.scss";
-import pen from "./../../../../assets/images/home-banner/pen.svg";
 
 function Banner() {
 	const history = useHistory();
@@ -19,7 +18,7 @@ function Banner() {
 					</button>
 				</div>
 				<div className={styles.image}>
-					<img src={pen} alt="Pen" />
+					<img src="https://images.unsplash.com/photo-1601321268954-22646044f7d0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlbnxlbnwwfHwwfHx8MA%3D%3D" alt="Pen" className="rounded-xl"/>
 				</div>
 			</div>
 			<div className={`${styles.wave} ${styles.wave1}`}></div>
