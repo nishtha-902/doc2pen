@@ -46,3 +46,5 @@ There are some Guidelines for better performance that you must follow while cont
 
 4. When adding functionalities that involves a lot of back and forth API calls, consider establishing an early connection so that the data could be fetched quickly. Refer [this GTmetrix blog](https://gtmetrix.com/preconnect-to-required-origins.html) for detailed information about using `preconnect` attribute that helps us to achieve this behaviour.
    - **Important**: you can use a maximum of 2 preconnect for good performance gains. Refer that GTmetrix blog's "Use preconnect wisely" section.
+
+   
