@@ -38,7 +38,7 @@ function Editor() {
 					<div className={styles.pageBtnsWrapper} style={{display:"flex", alignItems:"end"}}>
 						<Button
 							outline
-							color="danger"
+							color="primary"
 							disabled={currentPageNo === 1}
 							onClick={() => setCurrentPageNo(prev => prev - 1)}
 						>
