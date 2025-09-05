@@ -24,7 +24,7 @@ export default function Footer(props) {
 			</div>
 			<div className={styles.tint}></div>
 			<div className={styles.githubLogoDiv}>
-				<a href="https://github.com/smaranjitghose/doc2pen">
+				<a href="https://github.com/nishtha-902/doc2pen">
 					<UseAnimations
 						className={styles.githubLogo}
 						animation={github}
