@@ -39,7 +39,6 @@ function Editor() {
 						<Button
 							outline
 							color="primary"
-							style={{ height: "40px" }}
 							disabled={currentPageNo === 1}
 							onClick={() => setCurrentPageNo(prev => prev - 1)}
 						>
